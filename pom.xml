@@ -13,6 +13,20 @@
 		<sonar.host.url>http://44.202.108.97:9000/</sonar.host.url>
 
 	</properties>
+	
+
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://34.229.161.230:8081/repository/batch12-snapshot/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://34.229.161.230:8081/repository/batch12-release/</url>
+		</repository>
+  	</distributionManagement>
+
     
     <build>
         <plugins>
